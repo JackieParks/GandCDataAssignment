@@ -84,7 +84,7 @@ selmean <- selinfo %>% group_by(subjectid, activity) %>% select(-subjectid, -act
 selmeandf=as.data.frame(selmean)
 
 ## write data frame to a csv file called selmean
-write.table(selmean, "./data/selmean.csv", row.names = FALSE)
+write.table(selmean, "./data/selmean.txt", row.names = FALSE)
 
 
 
